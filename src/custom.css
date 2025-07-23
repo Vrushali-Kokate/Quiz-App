@@ -1,0 +1,141 @@
+/* src/custom.css */
+
+/* Custom Animation for background blobs */
+@keyframes blob {
+  0% {
+    transform: translate(0px, 0px) scale(1);
+  }
+  33% {
+    transform: translate(30px, -50px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+  100% {
+    transform: translate(0px, 0px) scale(1);
+  }
+}
+
+.animate-blob {
+  animation: blob 7s infinite cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+/* Custom shadow for main content cards */
+.shadow-3xl {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+/* General body and root styling */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f8f9fa; /* Bootstrap's default light background */
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom gradient backgrounds for pages */
+.page-gradient-bg {
+  background: linear-gradient(to bottom right, #0d6efd, #6f42c4); /* Bootstrap primary and purple */
+}
+
+/* Custom card styling for blur effect */
+.card-glassmorphism {
+  background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+  backdrop-filter: blur(10px); /* Blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+  transition: transform 0.3s ease-in-out;
+}
+
+.card-glassmorphism:hover {
+  transform: scale(1.01);
+}
+
+/* Custom button styles to match previous design */
+.btn-gradient-orange {
+  background: linear-gradient(to right, #fd7e14, #dc3545); /* Bootstrap orange and red */
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient-orange:hover {
+  background: linear-gradient(to right, #e66000, #c82333);
+  transform: scale(1.05);
+}
+
+.btn-gradient-orange:active {
+  transform: scale(0.95);
+}
+
+.btn-gradient-green {
+  background: linear-gradient(to right, #198754, #0d6efd); /* Bootstrap green and blue */
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient-green:hover {
+  background: linear-gradient(to right, #157347, #0a58ca);
+  transform: scale(1.05);
+}
+
+.btn-gradient-green:active {
+  transform: scale(0.95);
+}
+
+.btn-gradient-secondary {
+  background: linear-gradient(to right, #6c757d, #343a40); /* Bootstrap secondary and dark */
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-gradient-secondary:hover {
+  background: linear-gradient(to right, #5c636a, #212529);
+  transform: scale(1.05);
+}
+
+.btn-gradient-secondary:active {
+  transform: scale(0.95);
+}
+
+/* Custom select styling */
+.form-select-custom {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 16px 12px;
+}
+
+/* Custom input styling for shadow-inner */
+.form-control-shadow-inner {
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
+}
+
+/* Custom styling for specific text colors for icons */
+.text-indigo { color: #6610f2; } /* Bootstrap indigo */
+.text-teal { color: #20c997; }   /* Bootstrap teal */
+.text-orange { color: #fd7e14; } /* Bootstrap orange */
+.text-blue { color: #0d6efd; }   /* Bootstrap blue */
+.text-green { color: #198754; }  /* Bootstrap green */
+.text-red { color: #dc3545; }    /* Bootstrap red */
+
+/* Professional Header Styles */
+.header-pro-style {
+  border-bottom: 3px solid #fd7e14; /* Orange border at the bottom */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
