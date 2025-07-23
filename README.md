@@ -15,12 +15,6 @@ A professional, responsive, and interactive **Quiz App** built using **ReactJS**
 
 ---
 
-## 📸 Demo
-
-> 🔗 
-
-
----
 
 ## 🛠️ Tech Stack
 
@@ -31,5 +25,20 @@ A professional, responsive, and interactive **Quiz App** built using **ReactJS**
 - React Router DOM (for routing)
 
 ---
+
+## 📦 Installation & Setup
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/quiz-app.git
+
+# Navigate to project folder
+cd quiz-app
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 
 
